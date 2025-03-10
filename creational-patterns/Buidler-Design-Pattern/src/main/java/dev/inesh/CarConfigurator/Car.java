@@ -45,11 +45,11 @@ public class Car {
         }
 
         public Car build() {
-            if(factory.getCurrentCount() >= factory.getMaxCars()) {
+            if(factory.getCurrentCount() > factory.getMaxCars()) {
                 throw new IllegalArgumentException("Car production limit exceeded");
             }
-//            factory.setCurrentCount(factory.getCurrentCount() + 1);
-            factory.incrementCount();
+            factory.setCurrentCount(factory.getCurrentCount() + 1);
+//            factory.incrementCount();
             return new Car(this);
         }
     }

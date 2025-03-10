@@ -3,7 +3,7 @@ package dev.inesh.CarConfigurator;
 public class Client {
     public static void main(String[] args) {
         try {
-            Car.CarBuilder builder = new Car.CarBuilder("V8");
+            Car.CarBuilder builder = new Car.CarBuilder("V4");
             Car sportsCar = CarDirector.buildSportsCar(builder);
             System.out.println(sportsCar);
 
